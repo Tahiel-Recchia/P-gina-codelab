@@ -195,7 +195,7 @@ function elegirCompra(id) {
                     <div class="empresas">  
                         <h3>Para empresas</h3>
                         <img class="imagen-eleccion" src="img/empresa.png" />
-                        <a href="../pages/formulario_de_inscripcion.html"><button class="botones-eleccion" onclick="comprarParaEmpresas(${id})">Comprar</button></a>
+                        <a class="boton-empresa" href="../pages/formulario_de_inscripcion.html"><button class="botones-eleccion" onclick="comprarParaEmpresas(${id})">Comprar</button></a>
                     </div>
                 </div>
                 <button class="botones-eleccion cerrar" onclick="cerrarOverlay()">Cerrar</button>
@@ -224,7 +224,7 @@ function elegirCompraDetalles(){
                 <div class="empresas">  
                     <h3>Para empresas</h3>
                     <img class="imagen-eleccion" src="../img/empresa.png" />
-                    <a href="../pages/formulario_de_inscripcion.html"><button class="botones-eleccion" onclick="comprarParaEmpresas(${idDelCurso})">Comprar</button></a>
+                    <a class="boton-empresa" href="../pages/formulario_de_inscripcion.html"><button class="botones-eleccion" onclick="comprarParaEmpresas(${idDelCurso})">Comprar</button></a>
                 </div>
             </div>
             <button class="botones-eleccion cerrar" onclick="cerrarOverlay()">Cerrar</button>

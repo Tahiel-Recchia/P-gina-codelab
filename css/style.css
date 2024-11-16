@@ -7,9 +7,15 @@
     font-style: normal;
 }
 
+
+
 h2 {
     font-weight: 400;
     font-style: normal;
+}
+
+.boton-empresa{
+    text-decoration: none;
 }
 
 main {
