@@ -4,7 +4,7 @@ const descuentoPorGiftcardsPagar = JSON.parse(localStorage.getItem('descuento'))
 const baseDeUsuarios = JSON.parse(localStorage.getItem('BDUsuarios'));
 const usuarioEnSesion = JSON.parse(localStorage.getItem('usuarioLogueado'));
 const giftcardARegalar = JSON.parse(localStorage.getItem(`giftcardParaComprar${usuarioEnSesion.correo}`));
-
+console.log(baseDeUsuarios);
 
 function desplegarTarjeta(){
     const datosTarjeta = document.getElementById('datosDeTarjeta');
@@ -124,6 +124,9 @@ function agregarGiftcardAlUsuario(){
     usuarioParaCargarGiftcard.giftcard = giftcardARegalar;
     baseDeUsuarios[index] = usuarioParaCargarGiftcard;
     localStorage.setItem('BDUsuarios', JSON.stringify(baseDeUsuarios));
+
+    console.log(baseDeUsuarios[index]);
+    console.log(usuarioEnSesion);
     }
 }
 
